@@ -1,61 +1,14 @@
-# holiday.css :tada:
-
-[![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
-[![CI](https://github.com/EvgenyOrekhov/holiday.css/workflows/CI/badge.svg?event=push)](https://github.com/EvgenyOrekhov/holiday.css/actions?query=workflow%3ACI+event%3Apush)
+# holiday.css
 
 > No classes today! Because it's **holiday**!
 
 A minimalist classless CSS theme with dark mode support. Only 5 KB.
 
-## [Demo](https://holidaycss.js.org/)
-
-## Why
-
-I got tired of complex markup and tons of classes on every element.
-
-See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
-[holiday.css](https://jsfiddle.net/5egfxtLc/1/).
-
-## Features
-
-- makes your page fit even the smallest screens, no more broken `<body>` width
-  due to wide tables
-- supports all
-  [`<input>` types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types)
-- highlights invalid fields in your forms (that's right, no JS needed for that!)
-- makes your `<nav>` look nice, turns your nested `<ul>` lists into **accessible
-  dropdowns** (making <kbd>Tab</kbd> work with dropdowns in plain CSS was really
-  tricky!)
-- doesn't waste precious horizontal space on mobile screens for `<picture>`,
-  `video`, `<table>`, and `<pre>` by ignoring body margins and filling 100% of
-  screen width
-- keeps selector specificity as low as possible, so you could easily extend it
-  with CSS classes without using `!important`
-- supports **dark mode** out of the box
-- built with **pure CSS**
-- only **~5 KB** (minified and gzipped)
-
 ## Quick Start
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.2" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/N3rdL0rd/holiday.css/dist/holiday.min.css" />
 ```
-
-## Browser compatibility
-
-Tested on latest Chrome and Firefox.
-
-## Acknowledgements
-
-Sources of inspiration:
-
-- [Shoelace.css](https://www.shoelace.style/)
-- [Marx](https://mblode.github.io/marx/)
-- [Bulma](https://bulma.io/)
-- [CSS Bed](https://www.cssbed.com/)
-- [new.css](https://newcss.net/)
-
-## [Changelog](https://github.com/EvgenyOrekhov/holiday.css/releases)
 
 ## License
 
