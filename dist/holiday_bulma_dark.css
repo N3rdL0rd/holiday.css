@@ -734,27 +734,6 @@ nav li > *:not(ul, :only-child)::after {
   --border-radius: 0.25rem;
   --border-width: 1px;
 
-  /* Public light mode colors */
-  --light-border-color: #dbdbdb;
-  --light-border-hover-color: #b5b5b5;
-  --light-background-color: #fff;
-  --light-highlighted-background-color: #f5f5f5;
-  --light-text-color: #363636;
-  --light-danger-color: #f14668;
-  --light-danger-text-color: #fff;
-  --light-danger-hover-color: #f03a5f;
-  --light-success-color: #48c774;
-  --light-success-text-color: #fff;
-  --light-success-hover-color: #3ec46d;
-  --light-danger-text-background-color: #fde0e6;
-  --light-success-text-background-color: #effaf3;
-  --light-code-text-color: #f14668;
-  --light-code-background-color: #f5f5f5;
-  --light-link-color: #3273dc;
-  --light-link-visited-color: #b86bff;
-  --light-link-hover-color: #363636;
-  --light-link-active-color: #363636;
-
   /* Public dark mode colors */
   --dark-border-color: #5f6267;
   --dark-border-hover-color: #bcbebd;
@@ -777,25 +756,25 @@ nav li > *:not(ul, :only-child)::after {
   --dark-link-active-color: #fff;
 
   /* Internal color variables */
-  --border-color: var(--light-border-color);
-  --border-hover-color: var(--light-border-hover-color);
-  --background-color: var(--light-background-color);
-  --highlighted-background-color: var(--light-highlighted-background-color);
-  --text-color: var(--light-text-color);
-  --danger-color: var(--light-danger-color);
-  --danger-text-color: var(--light-danger-text-color);
-  --danger-hover-color: var(--light-danger-hover-color);
-  --success-color: var(--light-success-color);
-  --success-text-color: var(--light-success-text-color);
-  --success-hover-color: var(--light-success-hover-color);
-  --danger-text-background-color: var(--light-danger-text-background-color);
-  --success-text-background-color: var(--light-success-text-background-color);
-  --code-text-color: var(--light-code-text-color);
-  --code-background-color: var(--light-code-background-color);
-  --link-color: var(--light-link-color);
-  --link-visited-color: var(--light-link-visited-color);
-  --link-hover-color: var(--light-link-hover-color);
-  --link-active-color: var(--light-link-active-color);
+  --border-color: var(--dark-border-color);
+  --border-hover-color: var(--dark-border-hover-color);
+  --background-color: var(--dark-background-color);
+  --highlighted-background-color: var(--dark-highlighted-background-color);
+  --text-color: var(--dark-text-color);
+  --danger-color: var(--dark-danger-color);
+  --danger-text-color: var(--dark-danger-text-color);
+  --danger-hover-color: var(--dark-danger-hover-color);
+  --success-color: var(--dark-success-color);
+  --success-text-color: var(--dark-success-text-color);
+  --success-hover-color: var(--dark-success-hover-color);
+  --danger-text-background-color: var(--dark-danger-text-background-color);
+  --success-text-background-color: var(--dark-success-text-background-color);
+  --code-text-color: var(--dark-code-text-color);
+  --code-background-color: var(--dark-code-background-color);
+  --link-color: var(--dark-link-color);
+  --link-visited-color: var(--dark-link-visited-color);
+  --link-hover-color: var(--dark-link-hover-color);
+  --link-active-color: var(--dark-link-active-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -826,25 +805,25 @@ nav li > *:not(ul, :only-child)::after {
   color-scheme: light;
 
   /* Same colors as for `:root` */
-  --border-color: var(--light-border-color);
-  --border-hover-color: var(--light-border-hover-color);
-  --background-color: var(--light-background-color);
-  --highlighted-background-color: var(--light-highlighted-background-color);
-  --text-color: var(--light-text-color);
-  --danger-color: var(--light-danger-color);
-  --danger-text-color: var(--light-danger-text-color);
-  --danger-hover-color: var(--light-danger-hover-color);
-  --success-color: var(--light-success-color);
-  --success-text-color: var(--light-success-text-color);
-  --success-hover-color: var(--light-success-hover-color);
-  --danger-text-background-color: var(--light-danger-text-background-color);
-  --success-text-background-color: var(--light-success-text-background-color);
-  --code-text-color: var(--light-code-text-color);
-  --code-background-color: var(--light-code-background-color);
-  --link-color: var(--light-link-color);
-  --link-visited-color: var(--light-link-visited-color);
-  --link-hover-color: var(--light-link-hover-color);
-  --link-active-color: var(--light-link-active-color);
+  --border-color: var(--dark-border-color);
+  --border-hover-color: var(--dark-border-hover-color);
+  --background-color: var(--dark-background-color);
+  --highlighted-background-color: var(--dark-highlighted-background-color);
+  --text-color: var(--dark-text-color);
+  --danger-color: var(--dark-danger-color);
+  --danger-text-color: var(--dark-danger-text-color);
+  --danger-hover-color: var(--dark-danger-hover-color);
+  --success-color: var(--dark-success-color);
+  --success-text-color: var(--dark-success-text-color);
+  --success-hover-color: var(--dark-success-hover-color);
+  --danger-text-background-color: var(--dark-danger-text-background-color);
+  --success-text-background-color: var(--dark-success-text-background-color);
+  --code-text-color: var(--dark-code-text-color);
+  --code-background-color: var(--dark-code-background-color);
+  --link-color: var(--dark-link-color);
+  --link-visited-color: var(--dark-link-visited-color);
+  --link-hover-color: var(--dark-link-hover-color);
+  --link-active-color: var(--dark-link-active-color);
 }
 
 .holiday-css-dark {

@@ -727,6 +727,68 @@ nav li > *:not(ul, :only-child)::after {
   content: " ▾";
 }
 
+/* :root {
+  --text-50: #eff2f5;
+  --text-100: #e0e4eb;
+  --text-200: #c1c9d7;
+  --text-300: #a2aec3;
+  --text-400: #8393af;
+  --text-500: #63789c;
+  --text-600: #50607c;
+  --text-700: #3c485d;
+  --text-800: #28303e;
+  --text-900: #14181f;
+  --text-950: #0a0c10;
+
+  --background-50: #eff3f6;
+  --background-100: #dfe7ec;
+  --background-200: #bfcfd9;
+  --background-300: #9fb6c6;
+  --background-400: #7e9eb4;
+  --background-500: #5e86a1;
+  --background-600: #4b6b81;
+  --background-700: #395060;
+  --background-800: #263640;
+  --background-900: #131b20;
+  --background-950: #090d10;
+
+  --primary-50: #eff2f5;
+  --primary-100: #e0e5eb;
+  --primary-200: #c0cad8;
+  --primary-300: #a1b0c4;
+  --primary-400: #8296b0;
+  --primary-500: #627c9d;
+  --primary-600: #4f637d;
+  --primary-700: #3b4a5e;
+  --primary-800: #27313f;
+  --primary-900: #14191f;
+  --primary-950: #0a0c10;
+
+  --secondary-50: #f5eff4;
+  --secondary-100: #ecdfe9;
+  --secondary-200: #d8c0d3;
+  --secondary-300: #c5a0bc;
+  --secondary-400: #b181a6;
+  --secondary-500: #9e6190;
+  --secondary-600: #7e4e73;
+  --secondary-700: #5f3a56;
+  --secondary-800: #3f273a;
+  --secondary-900: #20131d;
+  --secondary-950: #100a0e;
+
+  --accent-50: #f5eff1;
+  --accent-100: #ebe0e3;
+  --accent-200: #d8c0c7;
+  --accent-300: #c4a1aa;
+  --accent-400: #b0828e;
+  --accent-500: #9d6272;
+  --accent-600: #7d4f5b;
+  --accent-700: #5e3b44;
+  --accent-800: #3f272e;
+  --accent-900: #1f1417;
+  --accent-950: #100a0b;
+} */
+
 :root {
   color-scheme: light dark;
 
@@ -734,68 +796,51 @@ nav li > *:not(ul, :only-child)::after {
   --border-radius: 0.25rem;
   --border-width: 1px;
 
-  /* Public light mode colors */
-  --light-border-color: #dbdbdb;
-  --light-border-hover-color: #b5b5b5;
-  --light-background-color: #fff;
-  --light-highlighted-background-color: #f5f5f5;
-  --light-text-color: #363636;
-  --light-danger-color: #f14668;
-  --light-danger-text-color: #fff;
-  --light-danger-hover-color: #f03a5f;
-  --light-success-color: #48c774;
-  --light-success-text-color: #fff;
-  --light-success-hover-color: #3ec46d;
-  --light-danger-text-background-color: #fde0e6;
-  --light-success-text-background-color: #effaf3;
-  --light-code-text-color: #f14668;
-  --light-code-background-color: #f5f5f5;
-  --light-link-color: #3273dc;
-  --light-link-visited-color: #b86bff;
-  --light-link-hover-color: #363636;
-  --light-link-active-color: #363636;
-
   /* Public dark mode colors */
-  --dark-border-color: #5f6267;
-  --dark-border-hover-color: #bcbebd;
-  --dark-background-color: #202124;
-  --dark-highlighted-background-color: #292b2e;
-  --dark-text-color: #fff;
-  --dark-danger-color: #770018;
-  --dark-danger-text-color: #fff;
-  --dark-danger-hover-color: #6b0015;
-  --dark-success-color: #006624;
-  --dark-success-text-color: #fff;
-  --dark-success-hover-color: #006122;
-  --dark-danger-text-background-color: #770018;
-  --dark-success-text-background-color: #006624;
-  --dark-code-text-color: #f1a0b0;
-  --dark-code-background-color: #292b2e;
-  --dark-link-color: #90b3ed;
-  --dark-link-visited-color: #cb93ff;
-  --dark-link-hover-color: #fff;
-  --dark-link-active-color: #fff;
+  --dark-border-color: var(--primary-300);
+  --dark-border-hover-color: var(--primary-400);
+  --dark-background-color: var(--background-900);
+  --dark-highlighted-background-color: var(--background-800);
+  --dark-text-color: var(--text-50);
+  --dark-danger-color: var(--accent-700);
+  --dark-danger-text-color: var(--text-50);
+  --dark-danger-hover-color: var(--accent-600);
+  --dark-success-color: var(--primary-500);
+  --dark-success-text-color: var(--text-50);
+  --dark-success-hover-color: var(--primary-600);
+  --dark-danger-text-background-color: var(--accent-700);
+  --dark-success-text-background-color: var(--primary-500);
+  --dark-code-text-color: var(--text-100);
+  --code-text-color: var(--text-100) !important;
+  --dark-code-background-color: var(--background-950);
+  --dark-link-color: var(--accent-400);
+  --dark-link-visited-color: var(--accent-400);
+  --dark-link-hover-color: var(--accent-300);
+  --dark-link-active-color: var(--accent-300);
+  --header-color: var(--primary-300);
+  --max-body-width: 80rem;
+  --landscape-background: var(--background);
 
   /* Internal color variables */
-  --border-color: var(--light-border-color);
-  --border-hover-color: var(--light-border-hover-color);
-  --background-color: var(--light-background-color);
-  --highlighted-background-color: var(--light-highlighted-background-color);
-  --text-color: var(--light-text-color);
-  --danger-color: var(--light-danger-color);
-  --danger-text-color: var(--light-danger-text-color);
-  --danger-hover-color: var(--light-danger-hover-color);
-  --success-color: var(--light-success-color);
-  --success-text-color: var(--light-success-text-color);
-  --success-hover-color: var(--light-success-hover-color);
-  --danger-text-background-color: var(--light-danger-text-background-color);
-  --success-text-background-color: var(--light-success-text-background-color);
-  --code-text-color: var(--light-code-text-color);
-  --code-background-color: var(--light-code-background-color);
-  --link-color: var(--light-link-color);
-  --link-visited-color: var(--light-link-visited-color);
-  --link-hover-color: var(--light-link-hover-color);
-  --link-active-color: var(--light-link-active-color);
+  --border-color: var(--dark-border-color);
+  --border-hover-color: var(--dark-border-hover-color);
+  --background-color: var(--dark-background-color);
+  --highlighted-background-color: var(--dark-highlighted-background-color);
+  --text-color: var(--dark-text-color);
+  --danger-color: var(--dark-danger-color);
+  --danger-text-color: var(--dark-danger-text-color);
+  --danger-hover-color: var(--dark-danger-hover-color);
+  --success-color: var(--dark-success-color);
+  --success-text-color: var(--dark-success-text-color);
+  --success-hover-color: var(--dark-success-hover-color);
+  --danger-text-background-color: var(--dark-danger-text-background-color);
+  --success-text-background-color: var(--dark-success-text-background-color);
+  --code-text-color: var(--dark-code-text-color);
+  --code-background-color: var(--dark-code-background-color);
+  --link-color: var(--dark-link-color);
+  --link-visited-color: var(--dark-link-visited-color);
+  --link-hover-color: var(--dark-link-hover-color);
+  --link-active-color: var(--dark-link-active-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -826,25 +871,25 @@ nav li > *:not(ul, :only-child)::after {
   color-scheme: light;
 
   /* Same colors as for `:root` */
-  --border-color: var(--light-border-color);
-  --border-hover-color: var(--light-border-hover-color);
-  --background-color: var(--light-background-color);
-  --highlighted-background-color: var(--light-highlighted-background-color);
-  --text-color: var(--light-text-color);
-  --danger-color: var(--light-danger-color);
-  --danger-text-color: var(--light-danger-text-color);
-  --danger-hover-color: var(--light-danger-hover-color);
-  --success-color: var(--light-success-color);
-  --success-text-color: var(--light-success-text-color);
-  --success-hover-color: var(--light-success-hover-color);
-  --danger-text-background-color: var(--light-danger-text-background-color);
-  --success-text-background-color: var(--light-success-text-background-color);
-  --code-text-color: var(--light-code-text-color);
-  --code-background-color: var(--light-code-background-color);
-  --link-color: var(--light-link-color);
-  --link-visited-color: var(--light-link-visited-color);
-  --link-hover-color: var(--light-link-hover-color);
-  --link-active-color: var(--light-link-active-color);
+  --border-color: var(--dark-border-color);
+  --border-hover-color: var(--dark-border-hover-color);
+  --background-color: var(--dark-background-color);
+  --highlighted-background-color: var(--dark-highlighted-background-color);
+  --text-color: var(--dark-text-color);
+  --danger-color: var(--dark-danger-color);
+  --danger-text-color: var(--dark-danger-text-color);
+  --danger-hover-color: var(--dark-danger-hover-color);
+  --success-color: var(--dark-success-color);
+  --success-text-color: var(--dark-success-text-color);
+  --success-hover-color: var(--dark-success-hover-color);
+  --danger-text-background-color: var(--dark-danger-text-background-color);
+  --success-text-background-color: var(--dark-success-text-background-color);
+  --code-text-color: var(--dark-code-text-color);
+  --code-background-color: var(--dark-code-background-color);
+  --link-color: var(--dark-link-color);
+  --link-visited-color: var(--dark-link-visited-color);
+  --link-hover-color: var(--dark-link-hover-color);
+  --link-active-color: var(--dark-link-active-color);
 }
 
 .holiday-css-dark {
